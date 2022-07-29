@@ -1,0 +1,63 @@
+.header-navbar {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left-light:link,
+.navbar-left-light:visited {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+  color: #161b22;
+  margin-left: 30px;
+}
+
+.navbar-left-dark:link,
+.navbar-left-dark:visited {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+  margin-left: 30px;
+}
+
+.navbar-right-light:link,
+.navbar-right-light:visited {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: #161b22;
+  margin-right: 30px;
+}
+
+.navbar-right-dark:link,
+.navbar-right-dark:visited {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  margin-right: 30px;
+}
+
+.light {
+  background-color: #f7faf3;
+}
+
+.dark {
+  background-color: #161b22;
+  color: white;
+}
+
+.header-icon-sun,
+.header-icon-moon {
+  font-size: 150%;
+  margin-right: 30px;
+  cursor: pointer;
+  transform: translateY(4px);
+}
+
+.header-icon-sun {
+  color: #161b22;
+}
