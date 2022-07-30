@@ -16,7 +16,7 @@ The application is made in **React** and Package.json is also provided.
 
 ## Pictures From the Application
 
-![img1](https://user-images.githubusercontent.com/104715456/181970133-d33573ca-49ab-4cec-90f0-b1536100ecf5.PNG)
+![Capture](https://user-images.githubusercontent.com/104715456/181971770-081e88b7-29d7-4889-a84d-74ccbb172c10.PNG)
 
 ![img2](https://user-images.githubusercontent.com/104715456/181970242-124441cd-a377-472d-bcee-98d9a9918e6d.PNG)
 
