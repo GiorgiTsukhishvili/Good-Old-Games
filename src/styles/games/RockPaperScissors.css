@@ -1,0 +1,47 @@
+.rockPaperScissors {
+  width: 100%;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.rps-icon {
+  font-size: 60px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.rps-icon:not(:first-child) {
+  margin-top: 30px;
+}
+
+.rps-light {
+  background-color: #fcfff9;
+  color: black;
+}
+
+.rps-dark {
+  background-color: #0d1117;
+  color: white;
+}
+
+.rps-scores {
+  position: absolute;
+  font-size: 24px;
+  top: 10%;
+  right: 10%;
+}
+
+.rps-header-one {
+  font-size: 24px;
+  transform: translateX(-45px);
+}
+
+.rps-header-two {
+  font-size: 24px;
+  margin-top: 40px;
+  transform: translateX(-40px);
+}

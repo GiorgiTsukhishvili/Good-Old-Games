@@ -9,6 +9,7 @@ import GuessNumber from "./components/games/GuessNumber";
 import PigGame from "./components/games/PigGame";
 
 import "./styles/App.css";
+import RockPaperScissors from "./components/games/RockPaperScissors";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/guess-a-number" element={<GuessNumber />} />
         <Route path="/pig-game" element={<PigGame />} />
+        <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
         <Route path="/*" element={<Error />} />
       </Routes>
     </ModeProvider>
