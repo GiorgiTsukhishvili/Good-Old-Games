@@ -50,7 +50,7 @@ const PigGame = () => {
     } else if (playerTwo.totalScore >= 100) {
       setWinner(true);
     }
-  }, [turn]);
+  }, [turn, playerOne.totalScore, playerTwo.totalScore]);
 
   const rollDice = () => {
     const random = Math.floor(Math.random() * 6 + 1);
