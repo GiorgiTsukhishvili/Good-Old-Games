@@ -6,6 +6,7 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Error from "./components/Error";
 import GuessNumber from "./components/games/GuessNumber";
+import PigGame from "./components/games/PigGame";
 
 import "./styles/App.css";
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/guess-a-number" element={<GuessNumber />} />
+        <Route path="/pig-game" element={<PigGame />} />
         <Route path="/*" element={<Error />} />
       </Routes>
     </ModeProvider>

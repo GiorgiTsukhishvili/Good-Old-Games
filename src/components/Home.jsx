@@ -7,6 +7,7 @@ const Home = () => {
   return (
     <div className="home light2">
       <Link to="/guess-a-number">Guess a Number</Link>
+      <Link to="/pig-game">Pig Game</Link>
     </div>
   );
 };
