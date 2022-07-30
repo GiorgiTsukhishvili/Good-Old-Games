@@ -67,7 +67,7 @@ const RockPaperScissors = () => {
       default:
         return;
     }
-  }, [toggle]);
+  }, [toggle, computerChoice, playerChoice]);
 
   return (
     <div
