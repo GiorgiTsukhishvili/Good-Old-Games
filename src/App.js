@@ -7,9 +7,10 @@ import Home from "./components/Home";
 import Error from "./components/Error";
 import GuessNumber from "./components/games/GuessNumber";
 import PigGame from "./components/games/PigGame";
+import Hangman from "./components/games/Hangman";
+import RockPaperScissors from "./components/games/RockPaperScissors";
 
 import "./styles/App.css";
-import RockPaperScissors from "./components/games/RockPaperScissors";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/guess-a-number" element={<GuessNumber />} />
         <Route path="/pig-game" element={<PigGame />} />
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
+        <Route path="/hangman" element={<Hangman />} />
         <Route path="/*" element={<Error />} />
       </Routes>
     </ModeProvider>
