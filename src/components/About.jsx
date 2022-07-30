@@ -16,7 +16,6 @@ const About = () => {
       <p> Pig Game</p>
       <p> Guess a Number</p>
       <p> Rock, Paper, Scissors</p>
-      <p> Hangman</p>
       <p>This application is created by Giorgi Tsukhishvili</p>
     </div>
   );
