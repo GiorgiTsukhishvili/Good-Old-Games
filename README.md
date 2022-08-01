@@ -13,6 +13,7 @@ The application is made in **React** and Package.json is also provided.
 
 - React Router
 - Uuid
+- React Icons
 
 ## Pictures From the Application
 
