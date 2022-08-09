@@ -14,7 +14,7 @@ import "../../styles/games/Hangman.css";
 const Hangman = () => {
   const { state } = useContext(ModeContext);
 
-  const [data, setData] = useState({
+  const [data] = useState({
     maxWrong: 6,
     images: [img0, img1, img2, img3, img4, img5, img6],
   });

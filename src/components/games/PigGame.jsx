@@ -30,6 +30,7 @@ const reducer = (state, action) => {
 
 const reducerTwo = reducer;
 const reducerOne = reducer;
+const dicePack = [dice1, dice2, dice3, dice4, dice5, dice6];
 
 const PigGame = () => {
   const [dice, setDice] = useState("");
@@ -54,55 +55,18 @@ const PigGame = () => {
 
   const rollDice = () => {
     const random = Math.floor(Math.random() * 6 + 1);
+    setDice(dicePack[random - 1]);
 
-    switch (random) {
-      case 1:
-        setDice(dice1);
-        {
-          turn ? dispatchOne({ type: "LOSS" }) : dispatchTwo({ type: "LOSS" });
-        }
-        setTurn((prevState) => !prevState);
-        break;
-      case 2:
-        setDice(dice2);
-        {
-          turn
-            ? dispatchOne({ type: "ADD", payload: 2 })
-            : dispatchTwo({ type: "ADD", payload: 2 });
-        }
-        break;
-      case 3:
-        setDice(dice3);
-        {
-          turn
-            ? dispatchOne({ type: "ADD", payload: 3 })
-            : dispatchTwo({ type: "ADD", payload: 3 });
-        }
-        break;
-      case 4:
-        setDice(dice4);
-        {
-          turn
-            ? dispatchOne({ type: "ADD", payload: 4 })
-            : dispatchTwo({ type: "ADD", payload: 4 });
-        }
-        break;
-      case 5:
-        setDice(dice5);
-        {
-          turn
-            ? dispatchOne({ type: "ADD", payload: 5 })
-            : dispatchTwo({ type: "ADD", payload: 5 });
-        }
-        break;
-      case 6:
-        setDice(dice6);
-        {
-          turn
-            ? dispatchOne({ type: "ADD", payload: 6 })
-            : dispatchTwo({ type: "ADD", payload: 6 });
-        }
-        break;
+    if (random === 1 && turn) {
+      dispatchOne({ type: "LOSS" });
+      setTurn((prevState) => !prevState);
+    } else if (random === 1 && !turn) {
+      dispatchTwo({ type: "LOSS" });
+      setTurn((prevState) => !prevState);
+    } else if (random > 1 && turn) {
+      dispatchOne({ type: "ADD", payload: random });
+    } else if (random > 1 && !turn) {
+      dispatchTwo({ type: "ADD", payload: random });
     }
   };
 
